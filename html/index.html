@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting algorithms</title>
+    <link rel="stylesheet" href="/styles/base.css">
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+
+<body>
+    <div class="main-grid">
+        <div class="properties outline">
+            <div class="field-group">
+                <label>Algorithm</label>
+                <select name="algorithm" id="algorithm-select">
+                    <option value="bubblesort">Bubble sort</option>
+                    <option value="selectsort">Select sort</option>
+                    <option value="insersort">Insert sort</option>
+                    <option value="quicksort">Quick sort</option>
+                </select>
+            </div>
+            <hr>
+            <div class=" field-group">
+                <label>Item count</label>
+                <input id="ItemCountInput" placeholder="10" value="10" type="text">
+            </div>
+        </div>
+        <div class="graph outline">
+            <canvas id="graph-canvas"></canvas>
+        </div>
+        <div class="analitics outline"></div>
+        <div class="actions">
+            <input type="button" onclick="Order()" value="Order">
+            <input type="button" onclick="Randomize()" value="Randomize">
+            <input type="button" onclick="Reset()" value="Reset">
+            <input type="button" onclick="array_move(1,5)" value="Move 1 to 5">
+        </div>
+    </div>
+    <!-- <script src="main.js" defer></script> -->
+    <script src="/js/graph-display.js"></script>
+    <script src="/js/sorting.js"></script>
+    <script src="/js/main.js"></script>
+
+</html>
